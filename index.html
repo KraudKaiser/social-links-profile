@@ -32,7 +32,7 @@
       background-color: hsl(0, 0%, 12%);
       padding: 3% 2%;
       border-radius: 2%;
-      min-width: 10%;
+      min-width: 20%;
       text-align: center;
     }
 
@@ -76,7 +76,16 @@
         row-gap: 0.7em;
         color: hsl(0, 0%, 100%);
         font-weight: 500;
-        list-style-type: none;
+        padding: 1%;
+        & ul{
+          display: flex;
+          flex-direction: column;
+          row-gap: .4em;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+        }
         & li{
           font-size: 60%;
           background-color: hsl(0, 0%, 20%);
@@ -114,12 +123,14 @@
         <p>"Front-end developer and avid reader"</p>
       </header>
       <section>
+        <ul>
           <li>Github</li>
           <li>Frontend Mentor</li>
           <li>Linkedin</li>
           <li>Twitter</li>
           <li>Instagram</li>
-      </section>
+        </ul>
+        </section>
     </article>
   </main>
 </body>
